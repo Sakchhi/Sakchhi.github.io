@@ -1,5 +1,7 @@
 name: Sakchhi Srivastava, Data Enthusiast
 markdown: kramdown
+title: Sakchhi's Blog
+description: My Awesome Blog about Machine Learning
 
 permalink: /blog/:year/:month/:day/:title
 
