@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting my wifi to work on Lenovo Ideapad 330 on Ubuntu 18.04"
+title: "Getting the Internet Up and Running"
 date: 2019-09-15
 ---
 
