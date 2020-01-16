@@ -7,8 +7,7 @@ date: 2020-01-16
 > “But if thought corrupts language, language can also corrupt thought.”
 >   *- George Orwell, 1984*
 
-I have been interested in learning more about text analytics and NLP. Machine learning can seem magical,  
-given the patterns it can draw from data using intuitive mathematical and statistical techniques. But getting a machine 
+I have been interested in learning more about text analytics and NLP. Machine learning can seem magical, given the patterns it can draw from data using intuitive mathematical and statistical techniques. But getting a machine 
 to understand text would unlock the path for machines to understand human thought.
 
 I decided to start with the basics. I registered for **Sentiment Analysis competition on Datahack**.
