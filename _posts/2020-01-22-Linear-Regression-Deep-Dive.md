@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Linear Regression Deep Dive"
+date: 2020-01-22
+---
+
 Linear Regression Deep Dive
 ===========================
 
