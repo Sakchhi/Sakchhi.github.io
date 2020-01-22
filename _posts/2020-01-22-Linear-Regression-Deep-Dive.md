@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Linear Regression Deep Dive"
-date: 2020-01-22
+title: Linear Regression Deep Dive
+date: 2020-01-22T00:00:00.000Z
+published: true
 ---
 
 Linear Regression Deep Dive
 ===========================
-
-[![Sakchhi Srivastava](https://miro.medium.com/fit/c/96/96/0*i-KxHPykXfvUEaQg.jpg)](https://medium.com/@sakchhi.sri?source=post_page-----f266480da10d----------------------)[Sakchhi Srivastava](https://medium.com/@sakchhi.sri?source=post_page-----f266480da10d----------------------)FollowDraft · 5 min read
 
 Linear Regression is one of the simplest and widely used models for regression modeling. It is models the relationship between a continuous, dependent variable Y and independent variable(s) X by fitting linear equation to the observed data.
 
@@ -15,7 +14,8 @@ Linear Regression is one of the simplest and widely used models for regression m
 
 Least Squares method minimizes the vertical deviation of predicted values from actual values. These error terms are called **Residuals.** Squaring the error ensures that positive and negative deviations do not cancel out.
 
-<img class="cu t u gl ak" src="https://miro.medium.com/max/1000/1\*gNf4sUo5iEHOjgwnkuCZrw.png" width="500" height="331" role="presentation"/>
+![linear-reg-graph]({{site.baseurl}}/_posts/500px-Linear_regression.png)
+
 
 * * *
 
@@ -23,7 +23,8 @@ Least Squares method minimizes the vertical deviation of predicted values from a
 
 We will explore Linear Regression in Python using **Student Performance data** from [**UCI-ML repository**](https://archive.ics.uci.edu/ml/datasets/Student+Performance). The dataset contains information about student achievement in secondary education of two Portuguese schools. The data attributes include student grades, demographic, social and school related features. For detailed data dictionary, visit the link. This is how the first few rows of the dataset look like.
 
-<img alt="Sample of the data" class="cu t u gl ak" src="https://miro.medium.com/max/1488/1\*rtOPLdgv46Eg\_Q8ygNH87A.png" width="744" height="802"/>
+![data_head]({{site.baseurl}}/_posts/Screenshot from 2020-01-22 16-14-41.png)
+
 
 Since the dataset contains categorical columns like Educational level of parents, gender of students, etc, we will [**One-Hot Encode**](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html)  these. This will automatically one-hot encode all the columns containing text data and create (n-1) new features, where n is the number of levels in the feature.
 
@@ -59,7 +60,8 @@ y\_pred = lin\_reg.predict(X\_test)
 
 LinearRegression class also has methods to checking the performance of the model using [**R-squared**](https://en.wikipedia.org/wiki/Coefficient_of_determination) metric. Simply speaking, R-square metric explains how much of the variance in the target variable is explained by the independent features. For a model that perfectly predicts the target value, it would be 1, and 0 for a model that always predicts a constant value. For our model, this metric is **~0.78**, which is a decent fit.
 
-<img class="cu t u gl ak" src="https://miro.medium.com/max/1522/1\*o\_cFDHjDov2co2L7CyDe-Q.png" width="761" height="83" role="presentation"/>
+![r2-score]({{site.baseurl}}/_posts/r2_score.png)
+
 
 * * *
 
